@@ -38,6 +38,48 @@ Some churches may operate without adequate safety measures, qualified leadership
 4. Review **reports/analytics** to track compliance trends and outstanding issues
 5. Plan **follow‑ups** based on evidence in the system
 
+## Objectives & scope
+
+### General objective
+
+To provide a reliable digital platform for **registering churches**, conducting **standardized inspections**, tracking **compliance status**, and generating **reports** to support regulatory oversight and public safety in Rwanda.
+
+### Specific objectives
+
+- Digitize church registration and maintain accurate, searchable church profiles
+- Standardize inspection criteria through configurable inspection standards/checklists
+- Record inspections and findings consistently, including inspection details per standard
+- Track compliance status over time and support follow‑up actions
+- Generate automatic reports and summaries for decision‑makers
+- Improve data availability for planning, monitoring, and accountability
+
+### Target users
+
+- Government inspectors and supervisors
+- District/sector officials responsible for oversight
+- System administrators (user management, configuration)
+- (Optional) Church representatives for providing/confirming required information (if enabled by policy)
+
+### Main modules
+
+- User authentication & role management
+- Church registration and management
+- Inspection standards management
+- Inspections & inspection details capture
+- Compliance reporting & analytics
+
+### Scope (what is included)
+
+- Managing churches, inspectors/users, standards, inspections, and reports
+- PostgreSQL-backed storage with safe local configuration (`db.properties`)
+- NetBeans/Ant build and runnable desktop client
+
+### Out of scope (for now)
+
+- Mobile app / offline field data capture
+- Public web portal for citizens
+- Integration with national ID systems, payment systems, or external government platforms
+
 ## Tech stack
 
 - **Java**: JDK 8 (source/target 1.8)
