@@ -3,16 +3,18 @@
 RCCMS is a Java Swing desktop application (NetBeans/Ant project) designed to support **church compliance monitoring in Rwanda**.
 It helps teams register churches, define inspection standards, record inspections, and produce compliance reports for decision‑making.
 
-## The real-world problem (context)
+## Problem statement (Rwanda)
 
-In practice, compliance monitoring can be slowed down by:
+In Rwanda, the rapid growth of religious institutions has created significant challenges in maintaining safety and regulatory compliance. Currently, church registration, inspection, and monitoring processes are often handled manually through paper-based systems, leading to inefficiencies, safety concerns, and poor regulatory oversight.
 
-- **Fragmented records** (paper files, spreadsheets, messages) that are hard to reconcile
-- **Inconsistent inspection standards** or checklists between inspectors/teams
-- **Limited visibility** into compliance status across sectors/districts
-- **Slow reporting** when leaders need summaries for planning, follow‑ups, or enforcement
+Key challenges include:
 
-RCCMS centralizes these workflows so inspection data is structured, searchable, and reportable.
+- **Fragmented records** that are hard to store, search, and verify
+- **Inconsistent inspection standards** between inspectors/teams
+- **Limited visibility** into compliance status across areas over time
+- **Slow reporting and follow-up** due to manual aggregation of findings
+
+Some churches may operate without adequate safety measures, qualified leadership, or sufficient community considerations. RCCMS provides a computerized solution that enables government inspectors to register churches digitally, conduct standardized inspections, track compliance status, and generate comprehensive reports automatically through a user-friendly Java Swing interface integrated with a PostgreSQL database via JDBC.
 
 ## Features
 
