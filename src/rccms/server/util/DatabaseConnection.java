@@ -10,17 +10,17 @@ import javax.swing.JOptionPane;
  * @author IT MODERN LTD
  */
 public class DatabaseConnection {
-    private static final String DB_URL = "jdbc:postgresql://localhost:5432/church_compliance_monitoring_system_db";
-    private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "123";
-
     private static Connection connection = null;
 
     public static Connection getConnection() {
         try {
             if (connection == null || connection.isClosed()) {
                 Class.forName("org.postgresql.Driver");
-                connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+                connection = DriverManager.getConnection(
+                        DbConfig.url(),
+                        DbConfig.user(),
+                        DbConfig.password()
+                );
             }
         } catch (ClassNotFoundException e) {
             JOptionPane.showMessageDialog(null,

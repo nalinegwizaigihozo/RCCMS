@@ -54,3 +54,6 @@ lib/
 *.ps1
 RCCMS_1/
 
+# Local secrets (DO NOT COMMIT)
+db.properties
+

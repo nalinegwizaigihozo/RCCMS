@@ -30,17 +30,29 @@ church registration, inspection standards, inspections, inspectors, and complian
 
 ### Database setup
 
-By default the project is configured to connect to:
+This repository is **safe for public GitHub**: it does **not** commit real database credentials.
+
+To run locally, create a file named `db.properties` in the project root (it is ignored by git).
+You can copy `db.properties.example` and edit it.
+
+By default, the example is configured to connect to:
 
 - **DB name**: `church_compliance_monitoring_system_db`
 - **Host/port**: `localhost:5432`
 - **User**: `postgres`
-- **Password**: `123`
+- **Password**: set your own locally (not committed)
 
-Update credentials in one (or both) places:
+The app reads DB settings from:
 
-- **JDBC helper**: `src/rccms/server/util/DatabaseConnection.java`
-- **JPA config**: `src/META-INF/persistence.xml` (persistence unit: `RCCMS_PU`)
+- `db.properties` (recommended), or environment variables:
+  - `RCCMS_DB_URL`
+  - `RCCMS_DB_USER`
+  - `RCCMS_DB_PASSWORD`
+
+Used by:
+
+- **JDBC**: `src/rccms/server/util/DatabaseConnection.java`
+- **JPA/Hibernate**: `src/rccms/server/util/JPAUtil.java` (persistence unit: `RCCMS_PU`)
 
 ### Run in NetBeans
 

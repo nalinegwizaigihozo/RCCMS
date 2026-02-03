@@ -1,0 +1,12 @@
+# Copy this file to: db.properties  (this file is ignored by git)
+#
+# PostgreSQL connection settings used by:
+# - JDBC: src/rccms/server/util/DatabaseConnection.java
+# - JPA/Hibernate: src/rccms/server/util/JPAUtil.java
+
+db.url=jdbc:postgresql://localhost:5432/church_compliance_monitoring_system_db
+db.user=postgres
+db.password=CHANGE_ME
+
+
+
