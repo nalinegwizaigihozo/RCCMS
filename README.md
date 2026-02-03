@@ -1,7 +1,18 @@
-## RCCMS_1 — Church Compliance Monitoring System
+## Rwanda Church Compliance Monitoring System (RCCMS)
 
-RCCMS_1 is a Java Swing desktop application (NetBeans/Ant project) for managing **church compliance inspections**:
-church registration, inspection standards, inspections, inspectors, and compliance reporting/analytics.
+RCCMS is a Java Swing desktop application (NetBeans/Ant project) designed to support **church compliance monitoring in Rwanda**.
+It helps teams register churches, define inspection standards, record inspections, and produce compliance reports for decision‑making.
+
+## The real-world problem (context)
+
+In practice, compliance monitoring can be slowed down by:
+
+- **Fragmented records** (paper files, spreadsheets, messages) that are hard to reconcile
+- **Inconsistent inspection standards** or checklists between inspectors/teams
+- **Limited visibility** into compliance status across sectors/districts
+- **Slow reporting** when leaders need summaries for planning, follow‑ups, or enforcement
+
+RCCMS centralizes these workflows so inspection data is structured, searchable, and reportable.
 
 ## Features
 
@@ -10,6 +21,20 @@ church registration, inspection standards, inspections, inspectors, and complian
 - **Standards management**: define inspection standards
 - **Inspection workflow**: create inspections + details
 - **Reporting**: compliance reports and analytics dashboard
+
+## Who it is for (stakeholders)
+
+- **Regulators / local authorities**: view compliance summaries and prioritize follow‑ups
+- **Inspectors**: perform inspections using consistent standards and capture results
+- **Church administrators**: support corrective actions based on findings (where applicable)
+
+## Typical workflow
+
+1. **Register churches** and maintain accurate profiles
+2. Define **inspection standards** (requirements/checklist)
+3. Create an **inspection** and record **inspection details** per standard
+4. Review **reports/analytics** to track compliance trends and outstanding issues
+5. Plan **follow‑ups** based on evidence in the system
 
 ## Tech stack
 
@@ -106,6 +131,14 @@ Then embed them like:
 - **Database connection error**: confirm PostgreSQL is running and your URL/user/password match.
 - **Driver not found**: ensure PostgreSQL JDBC jar is on the project classpath in NetBeans.
 - **CRLF/LF warnings on Windows**: safe to ignore; it’s just line-ending normalization.
+
+## Data & privacy note
+
+If you store personal data (e.g., inspector accounts, contact details), treat your database as confidential:
+
+- Use strong passwords (never `123`)
+- Limit access to the DB server
+- Avoid committing secrets into git (this repo is set up to prevent that)
 
 ## License
 
