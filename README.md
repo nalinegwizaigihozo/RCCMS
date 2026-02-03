@@ -74,13 +74,17 @@ NetBeans will copy required jars to `dist/lib` and set the manifest Class-Path a
 
 ## Screenshots
 
-Add screenshots here (recommended for GitHub):
+Preview (existing image in the repo):
+
+![RCCMS Preview](src/rccms/client/view/3d-rendering-church-building(1).jpg)
+
+Add your real UI screenshots here (recommended):
 
 - `docs/screenshots/login.png`
 - `docs/screenshots/dashboard.png`
 - `docs/screenshots/inspection.png`
 
-Once you add them, you can embed them like:
+Then embed them like:
 
 ![Login](docs/screenshots/login.png)
 ![Dashboard](docs/screenshots/dashboard.png)
